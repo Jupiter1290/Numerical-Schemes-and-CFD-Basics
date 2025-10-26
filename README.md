@@ -6,7 +6,7 @@ The `README` files within each folder include the corresponding problem statemen
 
 ---
 
-## 📂 Repository Structure and Topics
+## Repository Structure and Topics
 
 | Folder | Description |
 |--------|--------------|
@@ -21,21 +21,21 @@ The `README` files within each folder include the corresponding problem statemen
 
 ---
 
-## ⚙️ Numerical Methods and Tools
+## Numerical Methods and Tools
 - **Programming:** MATLAB  
 - **Techniques:** Finite Difference Method (FDM), Explicit Time Stepping, Iterative Solvers (Jacobi, Gauss–Seidel, SOR), Stability and Convergence Analysis  
 - **Applications:** Heat Conduction, Linear Convection, Compressible Nozzle Flow, and Matrix Systems  
 
 ---
 
-## 🧠 Learning Outcomes
+## Learning Outcomes
 - Developed an understanding of numerical discretization and stability.  
 - Implemented key CFD solvers from scratch in MATLAB.  
 - Transitioned from foundational numerical schemes to OpenFOAM, leading into the course *“Introduction to OpenFOAM Development.”*
 
 ---
 
-## 🧑‍💻 Author
+## Author
 **Thomas Abraham**  
 B.Tech in Mechanical Engineering, IIT (ISM) Dhanbad  
 *(Batch of 2026)*  
