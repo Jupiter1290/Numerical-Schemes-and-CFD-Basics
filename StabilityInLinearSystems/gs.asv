@@ -1,0 +1,23 @@
+function [x_gs,gs_iter,sr]=gs(A,b,mf)
+L=tril(A); U=triu(A);d=mf*diag(diag(A));d1=diag(daig(A));
+l=L-d1;u=U-d;
+T_gs=-inv((l+d))*u;
+C_gs=-inv((l+d))*b;
+tol=0.0001;
+err_gs=1;
+x_old=ones(3,1);
+x_gs=ones(3,1);
+gs_iter=1;
+while err_gs>tol
+    x_gs=T_gs*x_old+C_gs;
+    err_gs=max(max(abs(x_gs-x_old)));
+    x_old=x_gs;
+     if gs_iter>10000
+        break
+     end
+    gs_iter=gs_iter+1;
+end
+lambda=eig(T_gs);
+sr=max(abs(lambda));
+end
+
